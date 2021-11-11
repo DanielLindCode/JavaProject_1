@@ -37,6 +37,7 @@ public class Main {
         creates and puts a student into the Array
         */
         while (scan.hasNextLine()) {
+
             studentName = scan.nextLine();
             studentGradeString = scan.nextLine();
             splitString = studentGradeString.split(":");
@@ -54,6 +55,7 @@ public class Main {
         Prints all the students
         */
         System.out.println("Avaiable Students:");
+
         catalogue.printStudents();
 
         /*
@@ -86,6 +88,7 @@ public class Main {
             Gives the options
             */
             while (true) {
+
                 System.out.println(currentStudent.getStudentName());
                 System.out.println(currentStudent.getStudentGrades().allGrades());
                 System.out.println("Options: ");
@@ -107,23 +110,31 @@ public class Main {
             */
 
                 if (choice.equals("1")) {
+
                     System.out.println("============================== ");
                     System.out.println("Highest Grade: " + currentStudent.getStudentGrades().highestGrade());
                     System.out.println("============================== ");
+
                 } else if (choice.equals("2")) {
+
                     System.out.println("============================== ");
                     System.out.println("Lowest Grade: " + currentStudent.getStudentGrades().lowestGrade());
                     System.out.println("============================== ");
+
                 } else if (choice.equals("3")) {
+
                     System.out.println("============================== ");
                     System.out.println("Average Grade: " + currentStudent.getStudentGrades().averageGrade());
                     System.out.println("============================== ");
+
                 } else if (choice.equals("4")) {
+
                     System.out.println("============================== ");
                     System.out.println("Good Bye");
                     System.out.println("============================== ");
                     break;
                 } else {
+
                     System.out.println("Please choose a correct option. ");
                 }
             }
