@@ -7,6 +7,7 @@ public class RecordCatalogue {
     ArrayList students = new ArrayList<Student>();
 
     public void addStudent(Student student) {
+
         students.add(student);
 
     }

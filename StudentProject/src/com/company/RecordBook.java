@@ -20,20 +20,17 @@ public class RecordBook {
         return mathGrade + " " + englishGrade + " " + gymGrade + " " + scienceGrade;
 
     }
-
     public int averageGrade() {
 
         return (mathGrade + englishGrade + gymGrade + scienceGrade) / 4;
 
     }
-
     public int lowestGrade() {
         return Math.min(
                 Math.min(mathGrade, englishGrade),
                 Math.min(gymGrade, scienceGrade)
         );
     }
-
     public int highestGrade() {
         return Math.max(
                 Math.max(mathGrade, englishGrade),
