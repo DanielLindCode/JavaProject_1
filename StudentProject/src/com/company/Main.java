@@ -33,7 +33,7 @@ public class Main {
 
         /*
         Reads in name and grades, puts grades into a list and declare them as Integers.
-        Creates a new Recordbook
+        Creates a new RecordBook
         creates and puts a student into the Array
         */
         while (scan.hasNextLine()) {
@@ -47,6 +47,9 @@ public class Main {
                     Integer.parseInt(splitString[2]), Integer.parseInt(splitString[3])
             );
 
+            /*
+            Adds a student and creates a student.
+            */
             catalogue.addStudent(new Student(studentName, grades));
 
         }
@@ -54,7 +57,7 @@ public class Main {
         /*
         Prints all the students
         */
-        System.out.println("Avaiable Students:");
+        System.out.println("Available Students:");
 
         catalogue.printStudents();
 
@@ -106,7 +109,7 @@ public class Main {
                 String choice = optionScanner.nextLine();
 
             /*
-            Compair the input and print the option chosen.
+            Compare the input and print the option chosen.
             */
 
                 if (choice.equals("1")) {

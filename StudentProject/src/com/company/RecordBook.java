@@ -35,7 +35,10 @@ Constructor
 
     }
     /*
-    I use math.min to get the lowest grade
+    I use math.min to compare two grades and get the lowest one.
+    I do this twice as I have four grades.
+    Then I use it a third time to get the lowest of the two lowest results.
+
     */
     public int lowestGrade() {
 
@@ -44,9 +47,7 @@ Constructor
                 Math.min(gymGrade, scienceGrade)
         );
     }
-    /*
-    I use math.max to get the highest grade
-    */
+
     public int highestGrade() {
 
         return Math.max(

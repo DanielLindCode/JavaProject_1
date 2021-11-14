@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RecordCatalogue {
 
-    public ArrayList students = new ArrayList<Student>();
+    public ArrayList<Student> students = new ArrayList<>();
 
     /*
     Method to add a student to the ArrayList
@@ -17,8 +17,6 @@ public class RecordCatalogue {
 
     /*
     Method to print all the students on the list.
-    Im using casting here to get Student objects from the Array.
-    I want to use the .getStudentName.
     */
     public void printStudents() {
 
@@ -26,7 +24,7 @@ public class RecordCatalogue {
 
         for (int i = 0; i < students.size(); i++) {
 
-            student = (Student) students.get(i);
+            student = students.get(i);
 
             System.out.println(student.getStudentName());
 
@@ -36,14 +34,14 @@ public class RecordCatalogue {
 
     /*
     Method for finding the student you input.
-    Using casting here too.
     */
     public Student findStudent(String inputName) {
+
         Student student;
 
         for (int i = 0; i < students.size(); i++) {
 
-            student = (Student) students.get(i);
+            student = students.get(i);
 
             if (inputName.equals(student.getStudentName())) {
 
